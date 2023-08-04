@@ -16,6 +16,9 @@
     .iframe-container {
         height: 9600px !important;
     }
+    h2 {
+      text-align: center !important;
+    }
   }
 
   
