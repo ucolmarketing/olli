@@ -10,9 +10,7 @@
     border: none !important; /* Remove the iframe border */
   }
 
-  h2 {
-    color: #BA0C2f !important
-  }
+
 
   @media (max-width: 800px) {
     .iframe-container {
