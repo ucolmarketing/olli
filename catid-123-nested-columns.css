@@ -1,0 +1,78 @@
+    /* CSS Grid layout */
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* Two equal columns */
+        gap: 20px;
+        /* Gap between columns */
+    }
+
+    .main-column {
+        width: 100%;
+        /* Initially occupy 100% width */
+    }
+
+    .nested-columns {
+        display: grid;
+        grid-template-columns: 200px 250px;
+        /* Specific widths for nested columns */
+        gap: 20px;
+        /* Gap between nested columns */
+        padding-top: 30px
+    }
+
+    .nested-column1,
+    .nested-column2 {
+        width: 100%;
+        /* Occupy full width within nested columns */
+    }
+
+    /* Centering the .headshot class in nested-column1 */
+    .nested-column1 {
+        display: flex;
+        justify-content: center;
+        /* Horizontally center the content */
+        align-items: center;
+        /* Vertically center the content */
+    }
+
+    .nested-column1 .headshot {
+        width: 200px;
+    }
+
+    /* Responsive layout for screens less than 800px */
+    @media (max-width: 800px) {
+        .grid-container {
+            grid-template-columns: 1fr;
+            /* Single column layout */
+        }
+
+        .main-column {
+            width: 100%;
+            /* Occupy full width */
+        }
+
+        .nested-columns {
+            grid-template-columns: 1fr;
+            /* Single column layout for nested columns */
+        }
+
+        /* Centering the .headshot class in nested-column1 for smaller screens */
+        .nested-column1 {
+            justify-content: center;
+            /* Horizontally center the content */
+            align-items: center;
+            /* Vertically center the content */
+        }
+
+        .nested-column1 .headshot {
+            width: 50%;
+            /* Adjust the width for smaller screens */
+        }
+
+        .nested-column2 p {
+            text-align: center;
+            font-size: 18px !important;
+            line-height: 120% !important;
+        }
+    }
