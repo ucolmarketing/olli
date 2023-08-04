@@ -14,13 +14,24 @@ h1,h3,h4,h5,h6 {
 }
 
 h2 {
+    font-size: 36px;
+    line-height: 100%;
     font-family: 'Work Sans', sans-serif !important;
-    font-weight: bold;
-    color: #BA0C2f !important
+    color: #BA0C2f !important;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #BA0C2f;
   }
+h3 {
+    font-size: 30px;
+    line-height: 100%;
+    margin: 15px 0px 0px 0px;
+}
 
   @media (max-width: 800px) {
     h2 {
         text-align: center !important;
       }
+    h3 {
+    text-align: center !important;
+    }
   }
